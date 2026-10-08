@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* LEFT */
+
+.left {
+    width: 50%;
+    background: #8b6f5a;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 350px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: #b9a08c;
+    margin-top: 30px;
+}
+
+
+/* RIGHT */
+
+.right {
+    width: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 350px;
+}
+
+.login-box h2 {
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.login-box p {
+    font-size: 13px;
+    color: #777;
+}
+
+.google {
+    width: 100%;
+    padding: 11px;
+    margin-top: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #888;
+    font-size: 12px;
+}
+
+label {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 7px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.password {
+    display: flex;
+    justify-content: space-between;
+}
+
+.password a {
+    font-size: 12px;
+    color: #6b4d39;
+    text-decoration: none;
+}
+
+.remember {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.signin {
+    width: 100%;
+    padding: 11px;
+    background: #6b4d39;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signin:hover {
+    background: #503828;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup a {
+    color: #6b4d39;
+    text-decoration: none;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    .container {
+        display: block;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        min-height: 250px;
+        padding: 35px;
+    }
+
+    .left h1 {
+        font-size: 26px;
+    }
+
+    .box {
+        width: 60px;
+        height: 60px;
+        margin-top: 15px;
+    }
+
+    .right {
+        min-height: 500px;
+        padding: 30px;
+    }
+
+}
